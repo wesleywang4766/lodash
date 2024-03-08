@@ -5,6 +5,7 @@
  * code.
  */
 
+/*
 // Needed for redux-saga es6 generator support
 import '@babel/polyfill';
 
@@ -94,3 +95,25 @@ if (!window.Intl) {
 if (process.env.NODE_ENV === 'production') {
   require('offline-plugin/runtime').install(); // eslint-disable-line global-require
 }
+*/
+
+import React from 'react';
+import BlurBackground from './BlurBackground';
+import './App.css';
+
+const App = () => {
+  return (
+    <div className="app">
+      <h1>Blurred Background Example</h1>
+      <p>This is some content inside the app component.</p>
+      <BlurBackground>
+        <div className="content-container">
+          <h2>Blurred Component</h2>
+          <p>This component will have a blurred background.</p>
+        </div>
+      </BlurBackground>
+    </div>
+  );
+};
+
+export default App;

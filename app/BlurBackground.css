@@ -1,0 +1,14 @@
+/* BlurBackground.css */
+.blur-background {
+    position: relative;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  
+  .content-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 0 auto;
+  }
